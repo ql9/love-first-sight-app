@@ -115,7 +115,7 @@ export const getConversation = async (state: boolean, next: any) => {
 
 // export const getConversationWait = async () => {
 //   return await fetch(
-//     'https://still-brushlands-96770.herokuapp.com/conversation/' +
+//     'https://murmuring-taiga-67756.herokuapp.com/conversation/' +
 //       auth().currentUser?.uid +
 //       '/true',
 //     {
@@ -130,7 +130,7 @@ export const getConversation = async (state: boolean, next: any) => {
 
 export const updateStateConversation = (conversationId: any) => {
   return fetch(
-    'https://still-brushlands-96770.herokuapp.com/conversation/update-state',
+    'https://murmuring-taiga-67756.herokuapp.com/conversation/update-state',
     {
       method: 'PUT',
       headers: {
@@ -146,7 +146,7 @@ export const updateStateConversation = (conversationId: any) => {
 
 export const sendMessageRequest = async (receiverId: string) => {
   return await fetch(
-    'https://still-brushlands-96770.herokuapp.com/conversation/send-message',
+    'https://murmuring-taiga-67756.herokuapp.com/conversation/send-message',
     {
       method: 'POST',
       headers: {

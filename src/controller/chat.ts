@@ -1,11 +1,11 @@
 import React from 'react';
 import firestore from '@react-native-firebase/firestore';
 import auth from '@react-native-firebase/auth';
-import {GiftedChat} from 'react-native-gifted-chat';
-import {likeUser, updateStateConversation} from '.';
-import {upload, getUrl} from '../firebase/storage';
+import { GiftedChat } from 'react-native-gifted-chat';
+import { likeUser, updateStateConversation } from '.';
+import { upload, getUrl } from '../firebase/storage';
 import uuid from 'react-native-uuid';
-import {updateConversation} from './conversation';
+import { updateConversation } from './conversation';
 
 export const createKey = (
   appID: string,
@@ -14,7 +14,7 @@ export const createKey = (
   uid: number,
 ) => {
   return fetch(
-    'https://still-brushlands-96770.herokuapp.com/agora/create-key',
+    'https://murmuring-taiga-67756.herokuapp.com/agora/create-key',
     {
       method: 'POST',
       headers: {
@@ -55,7 +55,7 @@ export async function callVideo(
   ownerId: string,
 ) {
   return await fetch(
-    'https://still-brushlands-96770.herokuapp.com/notification/call',
+    'https://murmuring-taiga-67756.herokuapp.com/notification/call',
     {
       method: 'POST',
       headers: {
@@ -140,14 +140,14 @@ const sendNotification = async (
   conversationId: string,
 ) => {
   return await fetch(
-    'https://still-brushlands-96770.herokuapp.com/notification/message/' +
-      ownerId +
-      '/' +
-      userId +
-      '/' +
-      message +
-      '/' +
-      conversationId,
+    'https://murmuring-taiga-67756.herokuapp.com/notification/message/' +
+    ownerId +
+    '/' +
+    userId +
+    '/' +
+    message +
+    '/' +
+    conversationId,
     {
       method: 'GET',
       headers: {

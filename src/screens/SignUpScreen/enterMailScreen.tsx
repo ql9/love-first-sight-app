@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import {
   View,
   StyleSheet,
@@ -7,7 +7,7 @@ import {
   Dimensions,
   Pressable,
 } from 'react-native';
-import {useNavigation} from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native';
 import {
   ButtonCustom,
   HeaderCustom,
@@ -15,12 +15,12 @@ import {
   BackCircle,
   openNotification,
 } from '../../components';
-import {spacing, color} from '../../theme';
-import {ROUTER} from '../../constants/router';
+import { spacing, color } from '../../theme';
+import { ROUTER } from '../../constants/router';
 
 const getCode = (email: string) => {
   return fetch(
-    'https://still-brushlands-96770.herokuapp.com/profile/send-code',
+    'https://murmuring-taiga-67756.herokuapp.com/profile/send-code',
     {
       method: 'POST',
       headers: {

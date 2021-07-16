@@ -3,21 +3,21 @@
 <plist version="1.0">
 	<dict>
 		<key>CLIENT_ID</key>
-		<string></string>
+		<string>494069513117-566eie16o53g7ku8c5moroupvivogp4i.apps.googleusercontent.com</string>
 		<key>REVERSED_CLIENT_ID</key>
-		<string></string>
+		<string>com.googleusercontent.apps.494069513117-566eie16o53g7ku8c5moroupvivogp4i</string>
 		<key>API_KEY</key>
-		<string></string>
+		<string>AIzaSyDD-IrZ0mVNft3pEAoH1za5TPP9kGNfe0c</string>
 		<key>GCM_SENDER_ID</key>
-		<string></string>
+		<string>494069513117</string>
 		<key>PLIST_VERSION</key>
 		<string>1</string>
 		<key>BUNDLE_ID</key>
-		<string></string>
+		<string>com.ql9</string>
 		<key>PROJECT_ID</key>
-		<string></string>
+		<string>stapler-ver2</string>
 		<key>STORAGE_BUCKET</key>
-		<string></string>
+		<string>stapler-ver2.appspot.com</string>
 		<key>IS_ADS_ENABLED</key>
 		<false></false>
 		<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,6 @@
 		<key>IS_SIGNIN_ENABLED</key>
 		<true></true>
 		<key>GOOGLE_APP_ID</key>
-		<string></string>
-		<key>DATABASE_URL</key>
-		<string></string>
+		<string>1:494069513117:ios:1f9c3474067439ffd1cd74</string>
 	</dict>
 </plist>

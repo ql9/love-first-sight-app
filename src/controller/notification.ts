@@ -1,9 +1,9 @@
 export const sendNotification = async (ownerId: string, userId: string) => {
   return await fetch(
-    'https://still-brushlands-96770.herokuapp.com/notification/like/' +
-      ownerId +
-      '/' +
-      userId,
+    'https://murmuring-taiga-67756.herokuapp.com/notification/like/' +
+    ownerId +
+    '/' +
+    userId,
     {
       method: 'GET',
       headers: {

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import {
   View,
   StyleSheet,
@@ -8,9 +8,9 @@ import {
   Pressable,
   ImageBackground,
 } from 'react-native';
-import {useRoute} from '@react-navigation/native';
-import {color, spacing} from '../../theme';
-import {ROUTER} from '../../constants/router';
+import { useRoute } from '@react-navigation/native';
+import { color, spacing } from '../../theme';
+import { ROUTER } from '../../constants/router';
 import {
   BackCircle,
   HeaderCustom,
@@ -19,10 +19,10 @@ import {
   CameraFill,
   GalleryFill,
 } from '../../components';
-import {checkPermissionCamera, checkPermissionPhoto} from '../../controller';
+import { checkPermissionCamera, checkPermissionPhoto } from '../../controller';
 import Modal from 'react-native-modal';
-import {launchCamera, launchImageLibrary} from 'react-native-image-picker';
-import {upload, getUrl} from '../../firebase/storage';
+import { launchCamera, launchImageLibrary } from 'react-native-image-picker';
+import { upload, getUrl } from '../../firebase/storage';
 import * as firebase from '../../firebase/firebase';
 import auth from '@react-native-firebase/auth';
 import FastImage from 'react-native-fast-image';
@@ -76,7 +76,7 @@ function imageGalleryLaunch(setResourcePath: any) {
 }
 
 const createUser = (user: any) => {
-  return fetch('https://still-brushlands-96770.herokuapp.com/profile/create', {
+  return fetch('https://murmuring-taiga-67756.herokuapp.com/profile/create', {
     method: 'POST',
     headers: {
       Accept: 'application/json, text/plain, */*',
@@ -101,12 +101,12 @@ const background_image = require('../../../assets/images/background_default.png'
 const WIDTH = Dimensions.get('window').width;
 const HEIGHT = Dimensions.get('window').height;
 
-export const InitAvatarScreen = ({navigation}: any) => {
+export const InitAvatarScreen = ({ navigation }: any) => {
   const route = useRoute();
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [load, setLoad] = useState(false);
   const [resourcePath, setResourcePath] = useState(null);
-  const {user} = route.params;
+  const { user } = route.params;
 
   const handleContinue = async () => {
     setLoad(true);
@@ -126,11 +126,11 @@ export const InitAvatarScreen = ({navigation}: any) => {
         async () => {
           const result = await getUrl(user.userId, 'images', 'avatar.png');
           if (result) {
-            createUser({...user, avatar: result})
+            createUser({ ...user, avatar: result })
               .then(() => {
                 navigation.reset({
                   index: 0,
-                  routes: [{name: ROUTER.tab}],
+                  routes: [{ name: ROUTER.tab }],
                 });
                 setLoad(false);
               })
@@ -153,11 +153,11 @@ export const InitAvatarScreen = ({navigation}: any) => {
           async () => {
             const result = await getUrl(user.userId, 'images', 'avatar.png');
             if (result) {
-              createUser({...user, avatar: result})
+              createUser({ ...user, avatar: result })
                 .then(() => {
                   navigation.reset({
                     index: 0,
-                    routes: [{name: ROUTER.tab}],
+                    routes: [{ name: ROUTER.tab }],
                   });
                   setLoad(false);
                 })
@@ -198,7 +198,7 @@ export const InitAvatarScreen = ({navigation}: any) => {
               uri: resourcePath
                 ? resourcePath
                 : 'https://vsmcamp.com/wp-content/uploads/2020/11/JaZBMzV14fzRI4vBWG8jymplSUGSGgimkqtJakOV.jpeg',
-              headers: {Authorization: 'staplerapp123456'},
+              headers: { Authorization: 'staplerapp123456' },
               priority: FastImage.priority.normal,
             }}
             resizeMode={FastImage.resizeMode.cover}
