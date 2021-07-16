@@ -1,49 +1,49 @@
 {
   "project_info": {
-    "project_number": "500865270015",
-    "firebase_url": "https://stapler-cf434.firebaseio.com",
-    "project_id": "stapler-cf434",
-    "storage_bucket": "stapler-cf434.appspot.com"
+    "project_number": "",
+    "firebase_url": "",
+    "project_id": "",
+    "storage_bucket": ""
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:500865270015:android:f235e9eba0979127224cca",
+        "mobilesdk_app_id": "",
         "android_client_info": {
-          "package_name": "com.stapler.client"
+          "package_name": ""
         }
       },
       "oauth_client": [
         {
-          "client_id": "500865270015-2bnn9r63o2e8b9o4gpq7livn78nafaeo.apps.googleusercontent.com",
+          "client_id": "",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.stapler.client",
-            "certificate_hash": "89c04c93314da07e9b20088684d8137d8c751b49"
+            "package_name": "",
+            "certificate_hash": ""
           }
         },
         {
-          "client_id": "500865270015-2uat70emstop40v4v0cc9rmnhd3ogecm.apps.googleusercontent.com",
+          "client_id": "",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBZAITk7cKOJpmZHV1HoChqJ6pYaLROHCs"
+          "current_key": ""
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "500865270015-2uat70emstop40v4v0cc9rmnhd3ogecm.apps.googleusercontent.com",
+              "client_id": "",
               "client_type": 3
             },
             {
-              "client_id": "500865270015-3ufak8rrveu1pnd1bhlcidgdibk3losr.apps.googleusercontent.com",
+              "client_id": "",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.staplerapp"
+                "bundle_id": ""
               }
             }
           ]
